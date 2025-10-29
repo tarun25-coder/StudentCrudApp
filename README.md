@@ -16,3 +16,23 @@ A simple desktop app to **Create / Read / Update / Delete** students, built with
 
 ## 📁 Project Structure
 ``
+student-crud-swing/
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── com/
+│       │       └── example/
+│       │           └── studentcrud/
+│       │               ├── model/
+│       │               │   └── Student.java              # POJO with id, name, email, GPA
+│       │               ├── dao/
+│       │               │   └── StudentCSVDao.java        # Handles reading/writing CSV
+│       │               ├── ui/
+│       │               │   ├── StudentForm.java          # Add/edit form UI
+│       │               │   └── StudentTable.java         # JTable with sorting & actions
+│       │               ├── util/
+│       │               │   └── CSVUtils.java             # Comma-safe CSV helpers
+│       │               └── Main.java                     # Entry point with JFrame setup
+│       └── resources/
+│           └── students.csv                              # Auto-saved student data
+├── .gitignore
